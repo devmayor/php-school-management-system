@@ -1,0 +1,550 @@
+input,
+button,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+h1,
+.h1 {
+  font-size: 48px /* 64px */;
+}
+h2,
+.h2 {
+  font-size: 41px /* 52px */;
+}
+h3,
+.h3 {
+  font-size: 32px /* 40px */;
+}
+h4,
+.h4 {
+  font-size: 23px /* 29px */;
+}
+h5,
+.h5 {
+  font-size: 21px /* 28px */;
+}
+h6,
+.h6 {
+  font-size: 19px /* 24px */;
+}
+
+body{
+color:Teal;
+font-size:20px;
+background:url(../images/bg.jpg) repeat white;
+padding:0px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div{
+display:block;
+}
+a{
+text-decoration:none;
+  webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+
+}
+a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+#logout{
+margin-right:10px;
+margin-top:10px;
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+display: inline-block;
+position: absolute;
+top:60px;
+right:150px;
+text-align:center;
+background-color:#34495E;
+}
+#logout:hover{
+background-color:grey;
+}
+.addadmin{
+width:70%;
+height:90%;
+margin-left:40px;
+
+
+
+}
+.welcome{
+width:99%;
+height:23px;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border:1px solid grey;
+margin:3px;
+}
+.normal{
+margin-left:5px;
+color:green;
+font-size:20px;
+}
+.output{
+color:red;
+font-size:20px;
+
+}
+.logout{
+margin:10px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+.mainjob{
+width:99%;
+min-height:350px;
+display:inline-block;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border:1px solid grey;
+margin:3px;
+padding-bottom:15px;
+padding-left:5px;
+margin-bottom:30px;
+}
+.icons{
+width:16%;
+height:150px;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border:1px solid grey;
+margin:20px;
+display:relative;
+float:left;
+align:conter;
+text-align:center;
+background-color:white;
+}
+
+.icons:hover{
+background-color:MintCream;
+}
+.inner_icons{
+color:blue;
+font-size:18px;
+display:inline-block;
+width:100%;
+min-height:25%;
+background-color:grey;
+/*margin-top:66.5%;*/
+z-index:auto;
+
+}
+.icons img{
+z-index:1;
+height:72%;
+}
+.icons2{
+width:19%;
+height:160px;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border:1px solid grey;
+margin:20px;
+display:relative;
+float:left;
+align:conter;
+text-align:center;
+background-color:white;
+}
+.icons2:hover{
+background-color:MintCream;
+}
+.inner_icons2{
+color:blue;
+font-size:18px;
+display:inline-block;
+width:100%;
+height:25%;
+background-color:grey;
+/*margin-top:66.5%;*/
+z-index:auto;
+
+}
+.icons2 img{
+z-index:1;
+height:72%;
+}
+#news{
+width:99%;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+/*border:1px solid grey;*/
+margin:3px;
+/*margin-left:15%;*/
+padding-bottom:10px;
+
+}
+.news_div{
+width:95%;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+/*border:1px solid grey;*/
+margin:3px;
+background-color:white;
+margin-left:2%;
+display:block;
+padding-left:5px;
+font-size:16px;
+}
+
+.news_div div{
+font-size:12px;
+text-align:left;
+}
+.fieldset{
+margin-left:2%;
+width:90%;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+display:inline-block;
+}
+h1,h2{
+text-align:center;
+}
+
+#header{
+width:80%;
+height:150px;
+margin-right:10%;
+margin-left:10%;
+background: url('../images/img-2.jpg') repeat whitesmoke;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+}
+#notice{
+width:100%;
+height:20px
+}
+#menubar{
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+width:80%;
+/*height:30px;*/
+background-color:WhiteSmoke;
+margin-right:10%;
+margin-left:10%;
+margin-top:1px;
+display:inline-block;
+}
+#menubar li li:hover{
+color:teal;
+background-color:white;
+cursor:pointer;
+border:1px solid teal;
+}
+#menubar ul, #menubar li{
+list-style-type:none;
+padding:0;
+margin:0;
+}
+#menubar li{
+display:inline-block;
+width:120px;
+list-style-type:none;
+text-align:center;
+}
+#menubar li ul{
+position:absolute;
+background-color:#3498db;
+display:none;
+}
+#menubar li li{
+height:auto;
+display:block;
+padding:2px;
+}
+#menubar a{
+color:Teal;
+
+}
+#body{
+margin-top:1px;
+width:80%;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+background-color:WhiteSmoke;
+margin-right:10%;
+margin-left:10%;
+box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.75);
+display:inline-block;
+}
+.article{
+display:inline-block;
+
+}
+#adminlogin{
+width:90%;
+height:230px;
+padding:20px;
+margin-top:2px;
+/*margin-right:2px;*/
+margin-left:2px;
+background-color:WhiteSmoke;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+font:arial-black;
+font-size:18px;
+border:2px solid Gainsboro;
+padding:5px;
+position:relative;
+float:left;
+display:none;
+}
+.loginlabel{
+margin-left:10px;
+margin-bottom:10%;
+font-size:24px;
+}
+.submit1{
+margin:7px;
+height:35px;
+width:100px;
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+border:2px solid Gainsboro;
+color: #ffffff;
+background-color: #3498db;
+border: none;
+font-size: 15px;
+font-weight: normal;
+cursor:pointer;
+}
+#admin_part{
+width:50%;
+position:relative;
+float:left;
+}
+#teacher_part{
+width:50%;
+position:relative;
+float:right;
+}
+.submit1:hover{
+color:#3498db;
+border:2px solid #3498db;
+background-color: white;
+}
+#click_teacher{
+width:90%;
+background-color:#3498db;
+height:30px;
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+padding:8px;
+margin-top:5px;
+margin-bottom:5px;
+text-align:center;
+position:relative;
+float:right;
+cursor:pointer;
+}
+#click_admin{
+width:90%;
+background-color:#3498db;
+height:30px;
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+padding:8px;
+margin-top:5px;
+margin-bottom:5px;
+text-align:center;
+position:relative;
+float:left;
+cursor:pointer;
+}
+#teacherlogin{
+width:90%;
+height:230px;
+padding:20px;
+margin-top:2px;
+margin-right:1px;
+margin-left:2px;
+background-color:WhiteSmoke;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+font:arial-black;
+font-size:18px;
+border:2px solid Gainsboro;
+padding:5px;
+position:relative;
+display:none;
+float:right;
+}
+#movie{
+width:80%;
+height:80%;
+margin-left:5%;
+
+}
+
+#centerbody{
+width:97%;
+margin-top:2px;
+margin-bottom:19px;
+/*margin-right:2px;*/
+margin-left:2px;
+background-color:WhiteSmoke;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+font:arial-black;
+font-size:18px;
+border:2px solid Gainsboro;
+padding:10px;
+float:left;
+display:inline-block;
+
+}
+#footer{
+width:97%;
+margin-top:1px;
+margin-left:2px;
+background-color:WhiteSmoke;
+font:arial-black;
+font-size:18px;
+border-top:2px solid Gainsboro;
+padding:10px;
+display:inline-block;
+}
+#footer p{
+font-size:12px;
+}
+.label{
+margin-left:10px;
+margin-bottom:10%;
+}
+.label1{
+
+margin-left:10px;
+display:inline-block;
+width:180px;
+
+}
+.label2{
+margin-bottom:10px;
+margin-left:10px;
+display:inline-block;
+width:200px;
+
+}
+.inputform{
+color: teal;
+width:300px;
+height:30px;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+margin:3px;
+border: 2px solid #bdc3c7;
+outline: none;
+padding: 3px 5px;
+font-size:17px;
+}
+.input{
+border: 2px solid #bdc3c7;
+outline: none;
+color: teal;
+width:75%;
+height:20px;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+margin-left:10px;
+padding: 3px;
+}
+.submitbutton{
+color: #ffffff;
+background-color: #3498db;
+border: none;
+font-size: 15px;
+font-weight: normal;
+width:200px;
+height:30px;
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+margin:3px;
+margin-left:5px;
+cursor:pointer;
+}
+.textarea{
+border-radius:4px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+border: 2px solid #bdc3c7;
+font-size:16px;
+
+}
+.leftbar{
+width:20%;
+border-right:1px solid grey;
+border-bottom:1px solid grey;
+margin-right:3px;
+height:300px;
+float:left;
+display:relative;
+
+}
+.leftbar ul{
+width:100%;
+list-style-type:none;
+padding-left:0px;
+}
+.leftbar li {
+width:100%;
+height:30px;
+
+background-color:GhostWhite;
+margin-bottom:1px;
+border-top:1px solid grey;
+border-bottom:1px solid grey;
+cursor:pointer;
+
+}
+.leftbar a{
+color:teal;
+}
+.leftbar li:hover {
+background-color:Gainsboro;
+}
+.rightbar{
+padding-left:10px;
+padding-right:10px;
+width:77%;
+display:relative;
+float:right;
+}
+.notes{
+margin:18%;
+font-size:15px;
+color:red;
+padding:0px;
+margin-left:5px;
+
+}

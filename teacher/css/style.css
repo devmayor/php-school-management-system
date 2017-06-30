@@ -1,0 +1,19 @@
+.ttable th{
+border-radius:5px;
+width:100px;
+height:60px;
+}
+.ttable tr{
+font-size:13px;
+height:40px;
+overflow:auto;
+background-color:LightBlue;
+}
+.ttable td{
+text-align:center;
+border-radius:5px;
+}
+.ttable a{
+text-decoration:none;
+color:green;
+}

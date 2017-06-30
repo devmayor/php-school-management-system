@@ -1,0 +1,235 @@
+/* #########################################################
+
+HOW TO CREATE A RESPONSIVE IMAGE SLIDER [TUTORIAL]
+
+"How to create a Responsive Image Slider [Tutorial]" was specially made for DesignModo by our friend Valeriu Timbuc.
+
+Links:
+http://vtimbuc.net
+http://designmodo.com
+http://vladimirkudinov.com
+
+######################################################### */
+
+
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.flexslider a img { outline: none; border: none; }
+
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+	width: 100%;
+	display: block;
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .slides { display: block; }
+* html .slides { height: 1%; }
+
+
+
+/* Theme Styles */
+.flexslider {
+	position: relative;
+	zoom: 1;
+	padding: 10px;
+	background: #ffffff;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0, .2);
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0, .2);
+	box-shadow: 0px 1px 1px rgba(0,0,0, .2);
+}
+
+/* Edit it if you want */
+.flex-container {
+	min-width: 150px;
+	max-width: 960px;
+}
+
+.flexslider .slides { zoom: 1; }
+
+
+
+/* Direction Nav */
+.flex-direction-nav a {
+	display: block;
+	position: absolute;
+	margin: -17px 0 0 0;
+	width: 35px;
+	height: 35px;
+	top: 50%;
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 9999;
+
+	background-color: #82d344;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#82d344), to(#51af34));
+	background-image: -webkit-linear-gradient(top, #82d344, #51af34);
+	background-image: -moz-linear-gradient(top, #82d344, #51af34);
+	background-image: -o-linear-gradient(top, #82d344, #51af34);
+	background-image: linear-gradient(to bottom, #82d344, #51af34);
+}
+
+.flex-direction-nav a:before {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 9px;
+	height: 13px;
+	top: 11px;
+	left: 11px;
+	background: url(../img/arrows.png) no-repeat;
+}
+
+.flex-direction-nav a:after {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 35px;
+}
+
+.flex-direction-nav .flex-next {
+	right: -5px;
+
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+
+.flex-direction-nav .flex-prev {
+	left: -5px;
+
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+
+.flex-direction-nav .flex-next:before { background-position: -9px 0; left: 15px; }
+.flex-direction-nav .flex-prev:before { background-position: 0 0; }
+
+.flex-direction-nav .flex-next:after {
+	right: 0;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #31611e;
+}
+
+.flex-direction-nav .flex-prev:after {
+	left: 0;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid #31611e;
+}
+
+
+
+/* Control Nav */
+.flexslider .flex-control-nav {
+	position: absolute;
+	width: 100%;
+	bottom: -40px;
+	text-align: center;
+	margin: 0 0 0 -10px;
+}
+
+.flex-control-nav li {
+	display: inline-block;
+	zoom: 1;
+}
+
+.flex-control-paging li a {
+	display: block;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 12px;
+	height: 12px;
+	margin: 0 3px;
+	background-color: #b6b6b6 \9;
+
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+
+	-webkit-box-shadow: inset 0 0 0 2px #b6b6b6;
+	-moz-box-shadow: inset 0 0 0 2px #b6b6b6;
+	box-shadow: inset 0 0 0 2px #b6b6b6;
+}
+
+.flex-control-paging li a.flex-active {
+	background-color: #82d344;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#82d344), to(#51af34));
+	background-image: -webkit-linear-gradient(top, #82d344, #51af34);
+	background-image: -moz-linear-gradient(top, #82d344, #51af34);
+	background-image: -o-linear-gradient(top, #82d344, #51af34);
+	background-image: linear-gradient(to bottom, #82d344, #51af34);
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+/* Captions */
+.flexslider .slides p {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 0 5px;
+	margin: 0;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 20px;
+	color: white;
+
+	background-color: #222222;
+	background: rgba(0,0,0, .9);
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
